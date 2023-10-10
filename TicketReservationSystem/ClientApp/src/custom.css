@@ -1,0 +1,303 @@
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-top: 60px;
+}
+
+td {
+  padding: 5px;
+}
+
+th {
+  padding: 9px 15px;
+  font-weight: bold;
+  background-color: black; /* Set the header background color to black */
+  color: white; /* Set text color to white in the header */
+}
+
+.header-cell {
+  background-color: black; /* Set the header cell background color to black */
+  color: white; /* Set text color to white in header cells */
+}
+
+.edit-button {
+  background-color: #1B998B; /* Set edit button background color to green */
+  color: white; /* Set text color to white in edit button */
+  padding: 5px 10px; /* Add some padding to the button */
+  text-decoration: none; /* Remove underline from the link */
+  border-radius: 4px; /* Add rounded corners to the button */
+  display: inline-block;
+}
+
+.delete-button {
+  background-color: red; /* Set delete button background color to red */
+  color: white; /* Set text color to white in delete button */
+  padding: 5px 10px; /* Add some padding to the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 4px; /* Add rounded corners to the button */
+  display: inline-block;
+  margin-top: 3px;
+}
+.centered-heading {
+  text-align: center; /* Center the text horizontally */
+  color: darkblue; /* Set the text color to dark blue */
+  margin-top: 20px; /* Add some top margin to create space */
+}
+
+
+.centered-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.form-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+.input-container {
+  margin-top: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.btn.cancel {
+  background-color: red;
+  color: white;
+}
+
+.btn.delete {
+  background-color: #11468F;
+  color: white;
+}
+
+.btn.add {
+  background-color: #11468F;
+  color: white;
+}
+
+  .btn.update {
+    background-color: #11468F;
+    color: white;
+  }
+
+  
+  .delete-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .modal-item{
+    background-color: white;
+    padding: 10px 15px 15px 15px;
+    border-radius: 9px;
+
+  }
+  .waiting{
+    cursor: wait;
+  }
+  .loading{
+    font-weight: bold;
+    animation-name: load;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    width: 0px;
+    overflow: hidden;
+  }
+
+  @keyframes load {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 4px;
+    }
+    100% {
+      width: 15px;
+    }
+  }
+  .hidden{
+    display: none;
+  }
+  /* Add Train Button */
+  .add-train-button {
+    display: inline-block;
+    background-color: #11468F; /* Dark blue color for the button */
+    color: white; /* Text color for the button */
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    float: right;
+    margin-right: 40px; /* Align the button to the right */
+  }
+.add-train-button i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.add-train-button:hover {
+  background-color: #14776A; /* Darker shade when hovered */
+}
+
+/* Icon Styles (Font Awesome) */
+.fa-plus {
+  font-size: 20px; /* Adjust the icon size as needed */
+}
+/* Add these styles to your CSS */
+.status-text {
+  padding: 5px; /* Adjust the padding to control the background width and height */
+  background-color: green; /* Default background color for the text */
+  color: white; /* Text color for better contrast */
+}
+
+.cancelled {
+  background-color: red; /* Background color for 'Cancelled' text */
+}
+/* Navbar styles */
+.navbar {
+  background-color: #178377;
+  padding: 0px 0;
+  margin: 0;
+  position: fixed; /* Add position: fixed */
+  width: 100%; /* Set width to 100% to extend across the entire width */
+  top: 0; /* Add top: 0 to position it at the top */
+  left: 0;
+ /* Add left: 0 to position it at the left */
+  z-index: 1000; 
+
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  margin-right: 8px;
+}
+
+.navbar-logo-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo img {
+  width: 120px;
+  height: 90px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-item:last-child {
+  margin-right: 0;
+}
+
+/* Add your custom CSS styles here */
+
+.navbar-link {
+  color: #eaedf1; /* Change the link color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+  background-color: #178377; /* Change to the desired background color */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  transition: background-color 0.3s ease; /* Add a transition for smooth hover effect */
+}
+
+.navbar-link:hover {
+  background-color: #126b58; /* Change to the desired hover background color */
+  color: #fff; /* Change the text color on hover */
+}
+
+.login-button {
+  background-color: #0D5E6B; /* Change the button background color */
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #1B998B; /* Darker shade when hovered */
+}
